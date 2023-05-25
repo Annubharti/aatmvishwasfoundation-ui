@@ -656,7 +656,9 @@ header {
   padding-left: 20px; }
 
 .footer address {
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: larger;
+ }
 
 .footer address a {
   color: #FFF;
@@ -785,3 +787,24 @@ header {
   margin-bottom: 30px; }
 
 /*# sourceMappingURL=style.css.map */
+
+.donationHeader {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.donationSection {
+  padding: 40px;
+  text-align: center;
+}
+
+#donationBox{
+  border: 2dp solid black;
+}
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
