@@ -58,7 +58,7 @@ body {
 }
 
 p {
-  margin-bottom: 0px;
+  margin-bottom:1rem;
   width: 100%;
 }
 
@@ -518,12 +518,12 @@ header .small-menu {
 @media screen and (max-width: 1050px) {
   .slider-captions {
     bottom: 100px !important;
+    width: 90%;
+    text-align: center;
+    float: none;
+    margin: auto;
   }
 
-  width: 90%;
-  text-align: center;
-  float: none;
-  margin: auto;
 
   .slider-captions .slider-title {
     font-size: 42px;
@@ -868,8 +868,7 @@ header .small-menu {
 
 /* ===================================== Fooer CSS ================================== */
 .footer {
-  padding: 50px;
-  padding-bottom: 50px;
+  padding: 25px;
   background-color: #1e2436;
   color: #FFF;
 }
@@ -926,7 +925,6 @@ header .small-menu {
 }
 
 .copy {
-  padding: 20px;
   background: #1a202f;
   color: #FFF;
 }
