@@ -122,9 +122,7 @@ header {
                     width: 100%;
                     padding: 10px;
 
-                    a {
-                       
-                    }
+
                 }
 
                 a {
@@ -202,12 +200,12 @@ header {
 @media screen and (max-width: 1050px) {
     .slider-captions {
         bottom: 100px !important;
+        width: 90%;
+        text-align: center;
+        float: none;
+        margin: auto;
     }
 
-    width: 90%;
-    text-align: center;
-    float: none;
-    margin: auto;
 
     .slider-captions .slider-title {
         font-size: 42px;
@@ -606,7 +604,7 @@ header {
 
 .copy {
     padding: 20px;
-   background: #1a202f;
+    background: #1a202f;
     color: #FFF;
 }
 
@@ -676,20 +674,23 @@ header {
 }
 
 
-.nav-box{
+.nav-box {
     margin-top: 50px;
     border-radius: 50px;
     border: 1px solid #ccc;
-    ul{
-        li{
+
+    ul {
+        li {
             float: left;
             padding: 15px;
-            a{
+
+            a {
                 color: #FFFF;
             }
         }
     }
-    .btn{
+
+    .btn {
         margin-top: 7px;
         float: right;
         border-radius: 50px;
@@ -699,55 +700,64 @@ header {
 
 /* ===================================== Gallery Style  ================================== */
 .gallery-filter {
-  width: 100%;
-  text-align: center; }
-  .gallery-filter .btn {
-    background-color: #FFF; }
+    width: 100%;
+    text-align: center;
+}
+
+.gallery-filter .btn {
+    background-color: #FFF;
+}
 
 .gallery {
     @include big-padding();
-  padding: 30px;
-  background-color: #FFF; }
+    padding: 30px;
+    background-color: #FFF;
+}
 
 .gallery-title {
-  font-size: 36px;
-  color: #00ab9f;
-  text-align: center;
-  font-weight: 500;
-  margin-bottom: 70px; }
+    font-size: 36px;
+    color: #00ab9f;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
 
 .gallery-title:after {
-  content: "";
-  position: absolute;
-  width: 7.5%;
-  left: 46.5%;
-  height: 45px;
-  border-bottom: 1px solid $color-primary; }
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid $color-primary;
+}
 
 .filter-button {
-  font-size: 18px;
-  border: 1px solid $color-primary;
-  border-radius: 5px;
-  text-align: center;
-  color: $color-primary;
-  margin-bottom: 30px; }
+    font-size: 18px;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    text-align: center;
+    color: $color-primary;
+    margin-bottom: 30px;
+}
 
 .filter-button:hover {
-  font-size: 18px;
-  border: 1px solid $color-primary;
-  border-radius: 5px;
-  text-align: center;
-  color: #ffffff;
-  background-color: $color-primary; }
+    font-size: 18px;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: $color-primary;
+}
 
 .btn-default:active .filter-button:active {
-  background-color: $color-primary;
-  color: white; }
+    background-color: $color-primary;
+    color: white;
+}
 
 .port-image {
-  width: 100%; }
+    width: 100%;
+}
 
 .gallery_product {
-  margin-bottom: 30px; }
-
-
+    margin-bottom: 30px;
+}
