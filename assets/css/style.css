@@ -40,6 +40,13 @@ textarea {
   text-align: center;
 }
 
+.partner_img_center {
+  margin-left: auto;
+  display: block;
+  width: 50%;
+  margin-right: auto;
+}
+
 .left {
   text-align: left;
 }
