@@ -983,7 +983,7 @@ header .small-menu {
 
 .our-team .team-row .single-usr .det-o {
   padding: 20px;
-  background-color: #3cc88f;
+  background-color: #007bff;
 }
 
 .our-team .team-row .single-usr .det-o h4 {
@@ -1043,7 +1043,7 @@ header .small-menu {
 
 .gallery-title {
   font-size: 36px;
-  color: #00ab9f;
+  color: #007bff;
   text-align: center;
   font-weight: 500;
   margin-bottom: 70px;
@@ -1055,29 +1055,29 @@ header .small-menu {
   width: 7.5%;
   left: 46.5%;
   height: 45px;
-  border-bottom: 1px solid #3cc88f;
+  border-bottom: 1px solid #007bff;
 }
 
 .filter-button {
   font-size: 18px;
-  border: 1px solid #3cc88f;
+  border: 1px solid #007bff;
   border-radius: 5px;
   text-align: center;
-  color: #3cc88f;
+  color: #007bff;
   margin-bottom: 30px;
 }
 
 .filter-button:hover {
   font-size: 18px;
-  border: 1px solid #3cc88f;
+  border: 1px solid #007bff;
   border-radius: 5px;
   text-align: center;
   color: #ffffff;
-  background-color: #3cc88f;
+  background-color: #007bff;
 }
 
 .btn-default:active .filter-button:active {
-  background-color: #3cc88f;
+  background-color: #007bff;
   color: white;
 }
 
@@ -1191,8 +1191,81 @@ footer {
 }
 
 .no-hyperlink-style:hover {
-  color: #3cc88f;
+  color: #007bff;
   /* Hover color */
   text-decoration: none;
   /* Remove underline on hover */
+}
+
+/* Style for the career section */
+.career {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+.career h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.career p {
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.career-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.career-item {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin: 0 20px 20px;
+  max-width: 300px;
+  text-align: center;
+}
+.career-item h3 {
+  margin-bottom: 10px;
+}
+.career-item p {
+  margin-bottom: 10px;
+}
+.career-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.career-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the partners section */
+.partners {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+.partners h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.partner-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.partner-item {
+  margin: 0 20px 20px;
+  text-align: center;
+}
+.partner-item img {
+  width: 100px; /* Adjust the size as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+.partner-item p {
+  font-weight: bold;
 }
