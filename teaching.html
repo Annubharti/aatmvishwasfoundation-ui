@@ -14,21 +14,7 @@
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <style>
-        .blog {
-            margin-bottom: 20px;
-        }
-
-        .content {
-            overflow: hidden;
-        }
-
-        .read-more {
-            display: none;
-            color: blue;
-            cursor: pointer;
-        }
-    </style>
+   
 </head>
 
 <body>
@@ -112,7 +98,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="blog.html">Programs</a>
+                                <a class="nav-link" href="programs.html">Programs</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="donate_us.html">Donate Us</a>
@@ -134,17 +120,102 @@
         <div class="container">
             <div class="row">
                 <h2>Our Programs</h2>
-                <!-- <ul>
-                    <li> <a href="#"><i class="fas fa-home"></i> Home</a></li>
-                    <li><i class="fas fa-angle-double-right"></i> Blog</li>
-                </ul> -->
             </div>
         </div>
     </div>
 
+    <div id="blog" class="blog-container contaienr-fluid">
+        <div class="container">
+            <div class="session-title row">
+              <h2>Latest Blog</h2>
+              <p>These are some of our day to day activities those are taking place at our Aatmvishwas Foundation.</p>
+            </div>
+            <div class="row news-row blog">
+                <div class="col-md-6">
+                    <div class="news-card">
+                        <div class="image">
+                            <img src="assets/images/blogs/2.png" alt="">
+                        </div>
+                        <div class="detail">
+                            <h4>Personal Hygiene</h4>
+                            <p class="content"> Today, we organized our first weekly class
+                                at the Aatmvishwas Foundation
+                                Centre, marking the beginning of our new
+                                tradition of hosting unique
+                                activity sessions with the children every
+                                Saturday. During today's session,
+                                we focused on personal hygiene by checking
+                                the children's nails. Those with
+                                overgrown nails had them trimmed, and we
+                                also conducted checks on their teeth and
+                                clothing.
+                                Moving forward, this activity will take
+                                place every Saturday to instill a sense of
+                                cleanliness
+                                and neatness among the children.
+                            </p>
+                        <button class="btn btn-sm btn-primary read-more">Read More <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 blog">
+                    <div class="news-card">
+                        <div class="image">
+                            <img src="assets/images/blogs/3.png" alt="">
+                        </div>
+                        <div class="detail">
+                            <h4>Importance of mutual Growth</h4>
+                            <p class="content"> They joined the 'Atmasvishwas Foundation' on January 9th for a
+                                month-long stint, during which they made significant contributions and fostered mutual
+                                learning and growth.
+
+                                Both Ayush and Harsh diligently carried out their responsibilities at the 'Atmasvishwas
+                                Foundation', excelling in their project work and establishing strong bonds with the
+                                children and their families. To bid them farewell, they were presented with a towel and
+                                a book by the foundation's representatives.
+
+                                On behalf of the 'Aatmvishwas Foundation', I had the pleasure of awarding them with a
+                                one-month work experience certificate, acknowledging their dedication and commitment.
+                                Ayush and Harsh expressed their intent to remain engaged with the Aatmvishwas
+                                Foundation in the future and continue supporting its endeavors.
+
+                                The day concluded with heartfelt farewells, capturing memories with the children through
+                                photographs, and sharing sweet treats.
+
+                                Thank you for your valuable contributions.</p>       
+                     <button class="btn btn-sm btn-primary">Read More </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 blog">
+                    <div class="news-card">
+                        <div class="image">
+                            <img src="assets/images/blogs/4.png" alt="">
+                        </div>
+                        <div class="detail">
+                            <h4>About Windows 10 Update</h4>
+                            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla vel nisl a dictum. Donec ut est arcu. Donec hendrerit consectetur adipiscing elit. </p>
+                            <button class="btn btn-sm btn-primary read-more">Read More </i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 blog">
+                    <div class="news-card">
+                        <div class="image">
+                            <img src="assets/images/blogs/harsh-blog.jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <h3>Latest News about Smarteye</h3>
+                            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla vel nisl a dictum. Donec ut est arcu. Donec hendrerit consectetur adipiscing elit. </p>
+                            <button class="btn btn-sm btn-primary read-more">Read More </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ################# Our Blog Starts Here#######################--->
 
-    <section class="our-blog">
+    <!-- <section class="our-blog">
         <div class="container">
 
             <div class="blog-row row blogs">
@@ -339,31 +410,8 @@
                 </div>
             </div>
         </div>
-        <script>
-            document.querySelectorAll('.blog').forEach(blog => {
-                const content = blog.querySelector('.content');
-                const readMoreBtn = blog.querySelector('.read-more');
-                const words = content.textContent.split(' ');
-                let expanded = false;
-
-                if (words.length > 10) {
-                    content.textContent = words.slice(0, 50).join(' ');
-                    readMoreBtn.style.display = 'inline-block';
-                }
-
-                readMoreBtn.addEventListener('click', () => {
-                    expanded = !expanded;
-                    if (expanded) {
-                        content.textContent = words.join(' ');
-                        readMoreBtn.textContent = 'Read Less';
-                    } else {
-                        content.textContent = words.slice(0, 50).join(' ');
-                        readMoreBtn.textContent = 'Read More';
-                    }
-                });
-            });
-        </script>
-    </section>
+      
+    </section> -->
 
     <!--  ************************* Footer Starts Here ************************** -->
 
@@ -451,6 +499,30 @@
     </div>
 
 </body>
+<script>
+    document.querySelectorAll('.blog').forEach(blog => {
+        const content = blog.querySelector('.content');
+        const readMoreBtn = blog.querySelector('.read-more');
+        const words = content.textContent.split(' ');
+        let expanded = false;
+
+        if (words.length > 10) {
+            content.textContent = words.slice(0, 50).join(' ');
+            readMoreBtn.style.display = 'inline-block';
+        }
+
+        readMoreBtn.addEventListener('click', () => {
+            expanded = !expanded;
+            if (expanded) {
+                content.textContent = words.join(' ');
+                readMoreBtn.textContent = 'Read Less';
+            } else {
+                content.textContent = words.slice(0, 50).join(' ');
+                readMoreBtn.textContent = 'Read More ';
+            }
+        });
+    });
+</script>
 
 <script src="assets/js/jquery-3.2.1.min.js"></script>
 <script src="assets/js/popper.min.js"></script>

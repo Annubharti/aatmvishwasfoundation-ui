@@ -46,7 +46,8 @@
                                         class="fab fa-facebook-f"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/@AatmvishwasFoundation"></a><i class="fab fa-youtube"></i>
+                                <a href="https://www.youtube.com/@AatmvishwasFoundation"></a><i
+                                    class="fab fa-youtube"></i>
                             </li>
                             <li>
                                 <i class="fab fa-instagram"></i>
@@ -98,7 +99,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="blog.html">Programs</a>
+                                <a class="nav-link" href="programs.html">Programs</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="donate_us.html">Donate Us</a>
@@ -139,6 +140,18 @@
                                 placeholder="Enter Mobile Number" class="form-control input-sm"></div>
                     </div>
                     <div class="row cont-row">
+                        <div class="col-sm-3"><label>Regarding</label><span>:</span></div>
+                        <div class="col-sm-8"><select name="subject" id="subject" class="form-control input-sm">
+                            <option value="Becoming Team Members">Becoming Team Members</option>
+                            <option value="volunteering">Volunteering</option>
+                                <option value="Connecting to Partners">Connecting to Partners</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="row cont-row">
                         <div class="col-sm-3"><label>Enter
                                 Message</label><span>:</span></div>
                         <div class="col-sm-8"><textarea rows="5" id="message" placeholder="Enter Your Message"
@@ -162,7 +175,7 @@
                                 const data = {
                                     name: document.getElementById('name').value,
                                     message: document.getElementById('message').value,
-                                    subject: "Inquiry",
+                                    subject: document.getElementById('subject').value,
                                     check: "afs",
                                     email: document.getElementById('email').value,
                                     phone_number: document.getElementById('phone_number').value
@@ -204,14 +217,17 @@
                 </div>
                 <div class="col-sm-5">
                     <div style="margin:20px" class="serv">
-                        <h2 style="margin-top:10px;">Talk to Us
-                            Regarding...!</h2>
-                        <p> We love to engage in conversations related to
+                        <h2 style="margin-top:10px;">Talk to Us Regarding...!</h2>
+
+                        <p>We love to engage in conversations related to
                             collaborations, building new courses
                             orworkshops for skilling rural youth.
-                        <p> <br><span> Following collaborations are
-                                heartily welcome. </span>
-                        <ul Start="1">
+                        </p>
+                        <br>
+                        <span> Following collaborations are
+                            heartily welcome. </span>
+
+                        <ul style="list-style-type:square;">
                             <li> Traing or workshops for teachers,
                                 team members. </li>
                             <li> Connecting to your network</li>
@@ -219,13 +235,14 @@
                                 villages with us</li>
                             <li> Donate money, things or skills to
                                 support rural education </li>
-                            </ol><br><br>
-                            <a  class="icon"><i class="far fa-envelope"></i></a>
+                        </ul>
+                        <br><br>
+                        <a class="icon"><i class="far fa-envelope"></i></a>
 
-                            <strong>Write to us:
-                                aatmvishwasfoundation@gmail.com</strong><br>
-                                <a class="icon"><i class="fab fa-whatsapp"></i></a>
-                            <strong>Whatsapp: +91 95342 99262</strong>
+                        <strong>Write to us:
+                            aatmvishwasfoundation@gmail.com</strong><br>
+                        <a class="icon"><i class="fab fa-whatsapp"></i></a>
+                        <strong>Whatsapp: +91 95342 99262</strong>
                     </div>
                 </div>
             </div>
@@ -314,8 +331,8 @@
                 </a>
 
                 <a href="https://www.youtube.com/@AatmvishwasFoundation">
-                <i class="fab fa-youtube"></i>
-            </a>
+                    <i class="fab fa-youtube"></i>
+                </a>
 
                 <a><i class="fab fa-linkedin-in"></i></a>
             </span>
