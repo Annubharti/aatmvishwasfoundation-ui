@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label, input, button {
+  display: block;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  label, input, button {
+    margin-bottom: 0;
+  }
+
+  button {
+    grid-column: span 2;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Donate to Aatmvishwas Foundation</h1>
+<form>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="amount">Amount:</label>
+<input type="text" id="amount" name="amount" required>
+
+<label for="reference">Reference:</label>
+<input type="text" id="reference" name="reference" placeholder="Your name and purpose of donation" required>
+
+<button type="submit">Donate</button>
+</form>
+<p>Or donate via bank transfer:</p>
+<p><strong>Bank Name:</strong> State Bank Of India</p>
+<p><strong>Account Holder Name:</strong> Aatmvishwas Foundation</p>
+<p><strong>Account Number:</strong> 4261-6204-164</p>
+<p><strong>IFSC Code:</strong> SBIN0008477</p>
+<p><strong>Reference:</strong> Please mention your name and purpose of donation</p>
+</div>
+</body>
+</html>
